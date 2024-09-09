@@ -1,0 +1,13 @@
+go see google.png
+
+Here is a simple diagram illustrating the flow of a web request when a user types "https://www.google.com" in the browser and presses Enter. The diagram visually represents the key components:
+
+1. DNS Resolution
+2. Request reaching the server IP
+3. Encrypted traffic (HTTPS)
+4. Traffic passing through a firewall
+5. Load balancer distributing the request
+6. Web server serving the page
+7. Application server generating the page
+8. Database query
+This should help non-developers understand the basic flow of a web request.
