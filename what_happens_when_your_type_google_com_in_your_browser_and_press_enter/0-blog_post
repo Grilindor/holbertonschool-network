@@ -1,0 +1,38 @@
+To create a website or web application, several components must interact smoothly. Here’s an overview of the different steps involved, the technical components, and their role in the process, including an explanation of DNS request, TCP/IP, firewall, HTTPS/SSL, load balancer, web server, application server, and database.
+
+1. DNS Request
+When a user types a URL (like www.foobar.com) into their browser, a DNS request is sent to translate that domain name into an IP address. This request passes through several DNS servers (root server, TLD server, authoritative server) before returning the IP address corresponding to the requested domain. This allows the browser to know which machine to send the request to.
+
+2. TCP/IP
+Once the IP address of the web server is known through DNS, the user's browser uses the TCP/IP protocol to establish a connection with the server. TCP (Transmission Control Protocol) handles how data is segmented and sent in packets, while IP (Internet Protocol) ensures that these packets are directed to the correct IP address. TCP/IP ensures that data is sent and received reliably between the user and the server.
+
+3. Firewall
+The firewall is a security device that controls incoming and outgoing traffic from the server's network. It blocks unauthorized connections and only allows those that comply with predefined rules. This protects the server from attacks or unsecured access from the internet.
+
+4. HTTPS/SSL
+To secure communications between the user's browser and the server, the HTTPS protocol is used, which is the secure version of HTTP. HTTPS relies on SSL/TLS (Secure Sockets Layer/Transport Layer Security) to encrypt the exchanged data, thus ensuring the confidentiality and integrity of the information, such as passwords or credit card numbers.
+
+5. Load Balancer
+A load balancer distributes incoming network traffic across multiple servers to ensure that the workload is evenly distributed. This prevents a single server from becoming overloaded, improves website performance, and ensures better availability. If a server fails, the load balancer redirects requests to another operational server.
+
+6. Web Server
+The web server receives HTTP/HTTPS requests from users and serves the requested files (HTML, CSS, JavaScript, images, etc.). It is responsible for displaying the website content in the user's browser. The web server also interacts with the application server for more complex requests that require dynamic processing.
+
+7. Application Server
+The application server processes the business logic of the application. When a request involves a complex operation (like fetching specific data from the database, performing calculations, or applying business rules), the application server handles this task. It retrieves the data from the database, processes it, and returns the results to the web server for display to the user.
+
+8. Database
+The database stores all the information needed for the application to function properly. It can contain user information, products, transactions, and much more. The application server sends SQL queries to the database to retrieve or update data, then processes this information before sending it back to the web server.
+
+Process Summary
+1. The user types a URL into their browser.
+2. A DNS request is sent to resolve the domain name to an IP address.
+3. TCP/IP establishes a connection between the user and the web server.
+4. The firewall filters requests and allows secure ones.
+5. HTTPS/SSL encrypts communication between the browser and the server.
+6. If necessary, the load balancer distributes the request to one of the available servers.
+7. The web server receives the request and interacts with the application server to handle dynamic data.
+8. The application server interacts with the database to retrieve or update information.
+9. The final response is sent to the user’s browser, which displays the web page.
+
+Each component plays a critical role in delivering web content and handling user requests, ensuring security, performance, and availability of the site.
